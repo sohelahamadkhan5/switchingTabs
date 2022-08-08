@@ -1,0 +1,86 @@
+:root{
+    --bodycolor:aliceblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    background-color: var(--bodycolor);
+    font-family:"baloo bhai 2";
+    
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+
+}
+
+body{
+    height: 100vh;
+}
+.switchingTabBody{
+    height: 100%;
+}
+.switchingTabBody .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.switchingTabs{
+    /* border: solid ; */
+    border-radius: 12px 12px 0 0;
+    border-bottom: none;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    font-size: 24px;
+    background-color:slategray;
+    height: 8vh;
+}
+
+.switchingTabs .switch{
+    display: flex;
+    align-items: center;
+    background-color: slategray;
+    padding: 0 12px;
+    height: 8vh;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px 0 0 0;
+    font-size: 24px;
+}
+
+#switchedDisplay{
+    /* border: solid; */
+    width: 80%;
+    margin: 0 auto;
+}
+#display{
+    border-radius: 0 0 12px 12px;    
+    padding: 30px 20px;
+    background-color:papayawhip;
+}
+
+
+/* Media Queies */
+
+
+@media screen and (max-width:586px){
+    .switchingTabs .switch{
+        font-size: 11px;
+    }
+    #display{
+        font-size: 10px;
+    }
+}
+
+/* @media screen and (max-width:1440px){
+    #display{
+        height: 12vh;
+    }
+} */

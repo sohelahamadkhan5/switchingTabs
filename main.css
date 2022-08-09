@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
     background-color: var(--bodycolor);
     font-family:"baloo bhai 2";
     
